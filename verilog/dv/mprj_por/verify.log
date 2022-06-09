@@ -1,0 +1,3 @@
+make[2]: Entering directory `/scratch/users/rhyang/iadc_caravel_wrapper/verilog/dv/mprj_por'
+Makefile:84: *** /ef/apps/bin/riscv32-unknown-elf-gcc is not found, please export GCC_PATH and GCC_PREFIX before running make.  Stop.
+make[2]: Leaving directory `/scratch/users/rhyang/iadc_caravel_wrapper/verilog/dv/mprj_por'

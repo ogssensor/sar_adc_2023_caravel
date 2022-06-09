@@ -205,16 +205,7 @@ module user_analog_proj_example (
     // Monitor the 3.3V output with mprj_io[25] = gpio_analog[7]
     // Monitor the 1.8V outputs with mprj_io[26,27] = io_out[15,16]
 
-    example_por por2 (
-	`ifdef USE_POWER_PINS
-	    .vdd3v3(isupply),
-	    .vdd1v8(vccd1),
-	    .vss(vssa1),
-	`endif
-	.porb_h(gpio_analog[7]),	// 3.3V domain output
-	.porb_l(io15),			// 1.8V domain output
-	.por_l(io16)			// 1.8V domain output
-    );
+  
 
 endmodule
 
