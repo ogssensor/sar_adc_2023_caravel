@@ -1,0 +1,13 @@
+This script will generate files caravel_0_fill_pattern_x_y.gds
+Now generating fill patterns.  This may take. . . quite. . . a while.
+Traceback (most recent call last):
+  File "/scratch/users/rhyang/iadc_caravel_wrapper/caravel/scripts/generate_fill.py", line 346, in <module>
+    mproc = subprocess.run(['magic', '-dnull', '-noconsole',
+  File "/usr/lib/python3.8/subprocess.py", line 493, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "/usr/lib/python3.8/subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.8/subprocess.py", line 1704, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'magic'
+Generate fill completed.
