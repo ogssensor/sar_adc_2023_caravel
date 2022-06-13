@@ -177,16 +177,47 @@ module user_analog_proj_example (
     // Monitor the 3.3V output with mprj_io[10] = gpio_analog[3]
     // Monitor the 1.8V outputs with mprj_io[11,12] = io_out[11,12]
 
-    example_por por1 (
+    wire vdd, vss;
+
+    analog_top a_top (
 	`ifdef USE_POWER_PINS
-	    .vdd3v3(vdda1),
-	    .vdd1v8(vccd1),
-	    .vss(vssa1),
+	    .vdd(vdd),
+	    .vss(vss),
 	`endif
-	.porb_h(gpio_analog[3]),	// 3.3V domain output
-	.porb_l(io11),			// 1.8V domain output
-	.por_l(io12)			// 1.8V domain output
+        clk(clk),
+        rst_n(rst_n),
+        debug(debug),
+        mod_op(mod_op),
+        ip(ip),
+        in(in),
+        i_bias_1(i_bias_1),
+        i_bias_2(i_bias_2),
+        a_probe_0(a_probe_0),
+        a_probe_1(a_probe_1),
+        a_probe_2(a_probe_2),
+        a_probe_3(a_probe_3)
     );
+
+    analog_top d_filter (
+    `ifdef USE_POWER_PINS
+	    .vdd(vdd),
+	    .vss(vss),
+    `endif
+        clk(clk),
+        rst_n(rst_n),
+        sclk(sclk),
+        cs_n(cs_n),
+        data_in(mod_op),
+        data_out(data_out),
+        new_data(new_data),
+        serial_data_out(serial_data_out)
+    );
+
+    sky130_fd_pr__cap_mim_m3_1_PXTAZD pxtazd_decap (
+        .m4(vdd),
+        .m3(vss)
+    );
+
 
     // Instantiate 2nd POR with the analog power supply on one of the
     // analog pins.  NOTE:  io_analog[4] = mproj_io[18] and is the same
