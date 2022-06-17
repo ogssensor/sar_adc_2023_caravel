@@ -198,7 +198,7 @@ module user_analog_proj_example (
         a_probe_3(a_probe_3)
     );
 
-    analog_top d_filter (
+    digital_filter d_filter (
     `ifdef USE_POWER_PINS
 	    .vdd(vdd),
 	    .vss(vss),
