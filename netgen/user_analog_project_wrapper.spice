@@ -90,8 +90,8 @@ x1 mod_clk io_analog[10] io_analog[9] mod_rst io_analog[8] io_analog[1] la_data_
 x2 vccd1 vssd1 vssd1 io_out_7_buf[23] df_clk df_rst io_in_12_buf[0] io_in_11_buf[0] io_out[8]
 + io_out_13_buf[20] io_out[25] io_out[24] io_out[23] io_out[22] io_out[21] io_out[20] io_out[19] io_out[18] io_out[17]
 + io_out[16] io_out[15] io_out[14] digital_filter
-R21 vccd1 vccd2 sky130_fd_pr__res_generic_m3 W=10 L=10 m=2
-R22 vssd1 vssd2 sky130_fd_pr__res_generic_m3 W=10 L=10 m=2
+R21 vccd1 vccd2 sky130_fd_pr__res_generic_m5 W=10 L=10 m=2
+R22 vssd1 vssd2 sky130_fd_pr__res_generic_m5 W=10 L=10 m=2
 x3[38] io_out_26_buf[38] vssd1 vssd1 vccd1 vccd1 io_out_26_buf[37] sky130_fd_sc_hd__clkbuf_4
 x3[37] io_out_26_buf[37] vssd1 vssd1 vccd1 vccd1 io_out_26_buf[36] sky130_fd_sc_hd__clkbuf_4
 x3[36] io_out_26_buf[36] vssd1 vssd1 vccd1 vccd1 io_out_26_buf[35] sky130_fd_sc_hd__clkbuf_4
