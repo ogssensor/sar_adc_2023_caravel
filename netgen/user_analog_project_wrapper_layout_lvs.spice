@@ -5217,29 +5217,5 @@ Xsky130_fd_sc_hd__clkbuf_4_153 sky130_fd_sc_hd__clkbuf_4_153/A vssd1 vccd1 sky13
 Xsky130_fd_pr__cap_mim_m3_1_PXTAZD_1 vccd1 vssd1 sky130_fd_pr__cap_mim_m3_1_PXTAZD
 Xsky130_fd_sc_hd__clkbuf_4_131 sky130_fd_sc_hd__clkbuf_4_131/A vssd1 vccd1 sky130_fd_sc_hd__clkbuf_4_132/A
 + vssd1 vccd1 sky130_fd_sc_hd__clkbuf_4
-R0 vccd1 io_oeb[9]  sky130_fd_pr__res_generic_m3 w=560000u l=10
-R1 vssd1 io_oeb[26] sky130_fd_pr__res_generic_m3 w=560000u l=10
-R2 vccd1 io_oeb[12] sky130_fd_pr__res_generic_m3 w=560000u l=10
-R3 vssd1 io_oeb[22] sky130_fd_pr__res_generic_m3 w=560000u l=10
-R4 vssd1 io_oeb[18] sky130_fd_pr__res_generic_m3 w=560000u l=10
-R5 vssd1 io_oeb[20] sky130_fd_pr__res_generic_m3 w=560000u l=10
-R6 vssd1 io_oeb[25] sky130_fd_pr__res_generic_m3 w=560000u l=10
-R7 vssd1 io_oeb[16] sky130_fd_pr__res_generic_m3 w=560000u l=10
-R8 vccd1 vccd2 sky130_fd_pr__res_generic_m5 w=10 l=10
-R9 vssd1 vssd2 sky130_fd_pr__res_generic_m5 w=10 l=10
-R10 vssd1 io_oeb[19] sky130_fd_pr__res_generic_m3 w=560000u l=10
-R11 vssd1 io_oeb[21] sky130_fd_pr__res_generic_m3 w=560000u l=10
-R12 vssd1 io_oeb[17] sky130_fd_pr__res_generic_m3 w=560000u l=10
-R13 vssd1 io_oeb[15] sky130_fd_pr__res_generic_m3 w=560000u l=10
-R14 vssd1 io_oeb[14] sky130_fd_pr__res_generic_m3 w=560000u l=10
-R15 vssd1 io_oeb[8]  sky130_fd_pr__res_generic_m3 w=560000u l=10
-R16 vccd1 io_oeb[11] sky130_fd_pr__res_generic_m3 w=560000u l=10
-R17 vssd1 io_oeb[24] sky130_fd_pr__res_generic_m3 w=560000u l=10
-R18 vccd1 vccd2 sky130_fd_pr__res_generic_m5 w=10 l=10
-R19 vssd1 vssd2 sky130_fd_pr__res_generic_m5 w=10 l=10
-R20 vssd1 io_oeb[13] sky130_fd_pr__res_generic_m3 w=560000u l=10
-R21 vssd1 io_oeb[7]  sky130_fd_pr__res_generic_m3 w=560000u l=10
-R22 vccd1 io_oeb[10] sky130_fd_pr__res_generic_m3 w=560000u l=10
-R23 vssd1 io_oeb[23] sky130_fd_pr__res_generic_m3 w=560000u l=10
 .ends
 
