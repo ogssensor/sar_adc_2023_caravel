@@ -11,6 +11,8 @@
 
 This is the EE372 VLSI Design Project at Stanford University. The chip is an incremental Delta-Sigma ADC in Skywater 130 nm CMOS technology.
 
+** This repo is the top-level wrapper for the design in order to participate in the Efabless 2206Q Tapeout Shuttle **
+
 
 
 :warning: | Use this sample project for analog user projects. 
